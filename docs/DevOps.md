@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default.md
 title: DevOps guide
+pageNav: 3
 ---
 
 * Table of Contents

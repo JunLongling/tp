@@ -1,14 +1,13 @@
 ---
-layout: page
-title: User Guide
+layout: default.md
+title: "User Guide"
+pageNav: 3
 ---
 
 Clientele+ seamlessly combines client contacts, payment tracking and more in one efficient package, tailored specifically for freelance software developers.
 
-
-
-* Table of Contents
-  {:toc}
+* Table of Contents 
+{:toc}
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -73,7 +72,6 @@ Shows a message explaining how to access the help page.
 
 Format: `help`
 
-
 ### Add Client Details: `add`
 
 Allows the user to add a new client with details about payment status, client status, and project status.
@@ -81,7 +79,6 @@ Allows the user to add a new client with details about payment status, client st
 Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​ 
 [ps/PROJECT_STATUS] [py/PAYMENT_STATUS] [cs/CLIENT_STATUS]`
 
-****
 * Clients with the **same** `NAME`, `EMAIL` and `PHONE NUMBER` are considered duplicates and will not be added
 * A person can have any number of tags (including 0)
 * `NAME` must be **alphanumeric**, may contain **spaces** and **dashes**, and should not be blank.
@@ -92,7 +89,7 @@ Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​
 * `PAYMENT STATUS` Acceptable values are `paid`, `unpaid`, `p`, `u`, `0` for **paid**, `1` for **unpaid**. Case insensitive.
 * `CLIENT STATUS`  Acceptable values are `active`, `unresponsive`, `potential`, `old`. Case sensitive.
 * `PROJECT STATUS` Acceptable values are `in progress`, `completed`. Case insensitive.
-****
+
 
 Examples:
 * `add n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01
