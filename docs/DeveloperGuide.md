@@ -439,6 +439,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 7.  A more technical user must be able to interpret the contents of the stored JSON file.
 8.  A user must be updated on the status of their command within (at most) 2 seconds.
 
+### Planned Enhancements
+
+1.  The current phone number validation ensures numbers must be at least 3 digits long and consist of digits (0 to 9). While spaces and dashes are allowed, only 1 space or hyphen is allowed between each digit. This supports common formats like `9143 9032`, `872-233-8554`, and `987223414`.
+    We plan to enhance the phone validation while keeping the existing formatting rules. A **maximum length of 15 digits** will be enforced (excluding formatting characters) to prevent unrealistic entries. Additionally, we will extend the allowed characters to include international symbols such as `+` and parentheses `( )` to support global phone number formats. The current single space/hyphen rule will be maintained and applied to the new symbols. This will improve the application's flexibility while preventing erroneous data entry, accommodating international formats like `+1 (234) 567-8901` and `+65 8723-3385`.
+
 ### Glossary
 
 * **API**: A set of functions that enable communication between software components
