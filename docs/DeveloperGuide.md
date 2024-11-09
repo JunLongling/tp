@@ -441,8 +441,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Planned Enhancements
 
-1.  The current phone number validation ensures numbers must be at least 3 digits long and consist of digits (0 to 9). While spaces and dashes are allowed, only 1 space or hyphen is allowed between each digit. This supports common formats like `9143 9032`, `872-233-8554`, and `987223414`.
-    We plan to enhance the phone validation while keeping the existing formatting rules. A **maximum length of 15 digits** will be enforced (excluding formatting characters) to prevent unrealistic entries. Additionally, we will extend the allowed characters to include international symbols such as `+` and parentheses `( )` to support global phone number formats. The current single space/hyphen rule will be maintained and applied to the new symbols. This will improve the application's flexibility while preventing erroneous data entry, accommodating international formats like `+1 (234) 567-8901` and `+65 8723-3385`.
+1.  The current phone number validation ensures numbers must be at least 3 digits long (accommodating emergency numbers) and consist of digits (0 to 9). While spaces and dashes are allowed, only 1 space or hyphen is allowed between each digit. This supports common formats like `9143 9032`, `872-233-8554`, and `987223414`.
+    We plan to enhance the phone validation by enforcing a minimum of 7 digits and maximum of 15 digits (excluding formatting characters) to match real-world phone numbers. Additionally, we will extend the allowed characters to include international symbols such as + and parentheses ( ) to support global phone number formats. The plus sign must only appear at the start, and parentheses must come in matching pairs around area codes. The current single space/hyphen rule will be maintained across all number segments. This will improve the application's flexibility while preventing erroneous data entry, accommodating formats like `+1 (234) 567-8901`, `+44 20 7123 4567`, and `+65 6789-0123`.
 
 ### Glossary
 
